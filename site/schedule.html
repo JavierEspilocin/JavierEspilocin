@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Turnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Turnos</h1>
+    <div id="location-select">
+        <label>Seleccionar lugar:
+            <select id="location">
+                <option value="plaza">Plaza</option>
+                <option value="peatonal">Peatonal</option>
+            </select>
+        </label>
+    </div>
+    <div id="schedule"></div>
+    <section id="volunteers">
+        <h2>Voluntarios</h2>
+        <form id="add-volunteer">
+            <input type="text" id="vol-name" placeholder="Nombre" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="vol-list"></ul>
+    </section>
+    <template id="shift-cell-template">
+        <div class="shift-cell">
+            <span class="shift-time"></span>
+            <div class="assignment"></div>
+            <button class="assign-btn">Asignar</button>
+        </div>
+    </template>
+    <script src="scheduler.js"></script>
+</body>
+</html>

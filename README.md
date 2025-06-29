@@ -1,10 +1,17 @@
-- 👋 Hi, I’m @JavierEspilocin
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Shift Scheduler
 
-<!---
-JavierEspilocin/JavierEspilocin is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Esta aplicación permite gestionar turnos de voluntarios para dos lugares: **plaza** y **peatonal**. Se almacenan los voluntarios, sus preferencias y las asignaciones de cada semana.
+
+## Uso
+
+1. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+2. Inicia el servidor:
+   ```bash
+   npm start
+   ```
+3. Abre `http://localhost:3000/schedule.html` en tu navegador para gestionar los turnos.
+
+Los datos se guardan en `database.db` mediante SQLite.
